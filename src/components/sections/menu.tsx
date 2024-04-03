@@ -1,15 +1,15 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import { Home, Luggage, PhoneCall, Sparkle } from "lucide-react";
 import { goPage } from "./header";
 import { useRouter } from "next/navigation";
 
 export default function Menu() {
-    const router = useRouter()
+    const router = useRouter();
 
     const goRoute = (text: string) => {
-        goPage(text, () => router.push(`/${text}`))
-    }
+        goPage(text, () => router.push(`/${text}`));
+    };
 
     return (
         <div className="w-full fixed left-0 bottom-10 md:hidden flex justify-center h-fit z-40">
@@ -36,5 +36,5 @@ export default function Menu() {
                 </li>
             </ul>
         </div>
-    )
+    );
 }

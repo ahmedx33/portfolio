@@ -22,7 +22,7 @@ export default function Project({
     viewAs: Sorts["viewAs"];
 }) {
     const isList = viewAs === "list";
-    console.log(image);
+   
     const heading = (
         <>
             <div className="flex gap-2">

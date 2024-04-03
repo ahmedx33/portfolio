@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import Stats from "./_components/stats/stats";
 import SocialLinks from "@/components/social-links";
 import LoadingPage from "./loading-page";
