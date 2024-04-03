@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Ahmed Hany",
-    description: "Front-end developer, made over 45 project, worked in 2 companies, 2 years of experience, learning networking, I use Neo:vim~1: & tmux for coding, available to hire",
+    description: "I am a front end developer , I enjoy building web applications with modern technologies and challenging my self to learn new things. I enjoy spending time with my homie.",
 };
 
 export default function RootLayout({
