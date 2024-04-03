@@ -1,10 +1,11 @@
-import { Sorts, TechnologiesList } from "@/app/projects/page";
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Project as ProjectType } from "@/utils/types";
 import { Check, Code, Eye } from "lucide-react";
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
+import { Sorts, TechnologiesList } from "../../../page";
 
 export default function Project({
     image,
@@ -37,7 +38,7 @@ export default function Project({
                     return (
                         <Button
                             onClick={() =>
-                                setTechnologiesList((technologiesList) =>
+                                setTechnologiesList((technologiesList: any[]) =>
                                     technologiesList.map((tech) => {
                                         return {
                                             ...tech,
