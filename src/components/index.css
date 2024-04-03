@@ -1,0 +1,39 @@
+:root {
+    --main-clr: #1c1d20;
+    --pruple-clr: #5865f2;
+    --main-transition: 1.2s
+}
+
+
+.ball {
+    transition: var(--main-transition);
+    position: relative;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.t-1s {
+    transition: var(--main-transition);
+}
+
+.ball::before {
+    content: "";
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    background-color: var(--pruple-clr);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.ball:hover::before {
+    top: -150%;
+}
+
+.ball:hover {
+    background-color: var(--pruple-clr);
+}

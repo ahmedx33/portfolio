@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles/index.css"
+import "./index.css"
 
 interface HoverBallInterface {
     x: number,

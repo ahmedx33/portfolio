@@ -6,16 +6,15 @@ import LoadingPage from "./loading-page";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useStats } from "@/store";
+import HoverBall from "@/components/hover-ball";
 
 export default function Hero() {
     const { setStats, isLoading: isStatsLoading } = useStats((store) => store);
     const [isMount, setIsMount] = useState<boolean>(false);
     useEffect(() => {
-
         setIsMount(true);
 
         if (isMount) {
-
             (async () => {
                 if (isStatsLoading === false) return;
                 const { data: github } = await axios.get("https://api.github.com/users/ahmedx33");
@@ -28,7 +27,6 @@ export default function Hero() {
         };
     }, [setStats, isStatsLoading, isMount]);
 
-	
     return (
         <div>
             <LoadingPage section="hero" loadings={[{ name: "stats", status: isStatsLoading }]} />
@@ -36,15 +34,14 @@ export default function Hero() {
                 <div className="container h-full mx-auto flex items-start gap-12 pt-32 md:pt-34">
                     <div className="text flex items-start flex-col lg:w-2/3 w-full">
                         <h1 className="title leading-tight lg:text-6xl lg:mx-0 mx-auto w-fit lg:text-start text-center text-4xl mb-6 dark:text-gray-200">
-                            Hi, I&apos;m <span className="font-bold">X3.</span>
+                            Hi, I&apos;m <span className="font-bold">Ahmed Hany.</span>
                             <br />
-                            <span className="font-bold">Frontend</span> Developer,
+                            <strong>Frontend</strong> Developer,
                             <br />
-                            based in <span className="font-bold">Egypt</span>.
+                            based in <strong>Egypt</strong>.
                         </h1>
                         <p className="w-[80%] lg:mx-0 lg:text-start  mx-auto text-center text-gray-500  dark:text-slate-400">
-                            Hi, my name is X3, I&apos;m a frontend developer, I build web applications, I love to learn new technologies, I wanna be a Full Stack web developer, I have been as a
-                            front-end for 2 years, worked in 2 companies, and I love to share my knowledge.
+                            I am a front end developer , I enjoy building web applications with modern technologies and challenging my self to learn new things. I enjoy spending time with my family and friends.
                         </p>
                         <Stats />
                         <div className="lg:w-fit w-full flex justify-center mt-6">
@@ -52,7 +49,7 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="img-container w-1/2 h-[50%] justify-center items-start lg:flex hidden">
-                        <Image draggable="false" width={500} height={500} src="/vim.svg" alt="vim" />
+                        <HoverBall />
                     </div>
                 </div>
             </section>
