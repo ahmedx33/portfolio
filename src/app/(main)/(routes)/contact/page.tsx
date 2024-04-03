@@ -1,5 +1,5 @@
-import LoadingPage from "../loading-page";
+import LoadingPage from "@/app/loading-page";
 
 export default function Contact() {
-    return <LoadingPage section="contact" />
+    return <LoadingPage section="contact" />;
 }

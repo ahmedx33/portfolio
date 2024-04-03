@@ -5,11 +5,12 @@ import { technologies } from "@/constants";
 import { technology } from "@/utils/types";
 import ProjectsList from "./components/projects-list/projects-list";
 import Caption from "@/components/ui/caption";
-import LoadingPage from "../loading-page";
+
 import { useProjects } from "@/store";
 import getProjects from "@/utils/getProjects";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
+import LoadingPage from "@/app/loading-page";
 
 export interface Sorts {
     sortBy: "older" | "newer" | null;

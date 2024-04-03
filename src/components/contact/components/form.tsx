@@ -27,7 +27,7 @@ export default function Form() {
         }
         setIsSending(true);
         setIsError(false);
-        const res = await axios.post("https://formspree.io/f/mgegorre", { name, email, subject, body });
+        const res = await axios.post("https://formspree.io/f/moqgkzlw", { name, email, subject, body });
         setSuccess(res.status === 200);
         setIsSending(false);
     }

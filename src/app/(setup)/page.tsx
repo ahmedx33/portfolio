@@ -1,12 +1,12 @@
 "use client";
 
-import Stats from "./_components/stats/stats";
 import SocialLinks from "@/components/social-links";
-import LoadingPage from "./loading-page";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useStats } from "@/store";
 import HoverBall from "@/components/hover-ball";
+import LoadingPage from "../loading-page";
+import Stats from "@/components/stats/stats";
 
 export default function Hero() {
     const { setStats, isLoading: isStatsLoading } = useStats((store) => store);
