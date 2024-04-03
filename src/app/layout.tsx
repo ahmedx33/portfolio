@@ -12,7 +12,7 @@ import Menu from "./_components/menu";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "X3",
+	title: "Ahmed Hany",
 	description:
 		"Front-end developer, made over 45 project, worked in 2 companies, 2 years of experience, learning networking, I use Neo:vim~1: & tmux for coding, available to hire",
 };

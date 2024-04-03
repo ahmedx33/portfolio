@@ -5,7 +5,7 @@ export default function Logo() {
 	return (
 		<div className="logo flex items-center font-bold gap-[0.250rem]">
 			<Vim />
-			X3
+			Ahmed Hany
 		</div>
 	);
 }
