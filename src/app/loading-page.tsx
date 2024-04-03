@@ -66,7 +66,7 @@ export default function LoadingPage({
 			className="loading-container top-0 border-2 w-full h-screen fixed bg-white z-50 dark:bg-[#09090B] flex flex-col items-center justify-center px-8 md:px-12 lg:px-24 3xl:px-[30rem]"
 		>
 			<h1 className="md:text-6xl text-3xl font-bold w-fit mx-auto md:mb-12 mb-6 transition md:text-start text-center">
-				welcome to X3 <Vim width={90} height={90} />
+				Welcome!
 			</h1>
 			<h3 className="loading-text md:text-3xl text-3xl font-semibold w-fit mx-auto">
 				{section}
