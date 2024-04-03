@@ -25,7 +25,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="scroll-smooth scroll-p-8">
 			<body
-				className={`${inter.className} dark:bg-slate-950 dark:text-white`}
+				className={`${inter.className} dark:bg-[#09090B] dark:text-white`}
 			>
 				<ThemeProvider
 					attribute="class"

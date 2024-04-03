@@ -16,14 +16,12 @@ const useProjects = create<UseProjectsInterface>((set) => ({
 
 interface UseStatsInterface {
     github: number | null
-    codewars: number | null
     isLoading: boolean
-    setStats: (stats: { github: number, codewars: number }) => void
+    setStats: (stats: { github: number }) => void
 }
 
 const useStats = create<UseStatsInterface>((set) => ({
     github: null,
-    codewars: null,
     isLoading: true,
     setStats: (stats) => set(() => ({ ...stats, isLoading: false })),
 }))
