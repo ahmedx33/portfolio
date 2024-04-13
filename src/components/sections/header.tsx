@@ -54,6 +54,11 @@ export function Header() {
                             Contact me
                         </button>
                     </li>
+                    <li>
+                        <button onClick={() => goRoute("about")} className="transition hover:dark:text-slate-200 hover:text-gray-600 dark:hover:text-slate-100 md:w-fit w-full md:h-fit h-24">
+                            About me
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </header>
