@@ -3,7 +3,7 @@ import axios from "axios";
 export default async function sendEmail(name: string, email: string, subject: string, body: string) {
     const data = JSON.stringify({
         "Messages": [{
-            "From": { "Email": "hatemziad384@gmail.com", "Name": "Ziad Hatem" },
+            "From": { "Email": "oms51857@gmail.com", "Name": "Ahmed hany" },
             "To": [{ "Email": email, "Name": name }],
             "Subject": subject,
             "TextPart": body
@@ -25,6 +25,6 @@ export default async function sendEmail(name: string, email: string, subject: st
             console.log(JSON.stringify(response.data));
         })
         .catch(function(error) {
-            console.log(error);
+            console.error(error);
         });
 }
