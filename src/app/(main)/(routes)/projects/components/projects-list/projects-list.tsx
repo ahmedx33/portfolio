@@ -4,6 +4,7 @@ import Project from "./components/project";
 import SkeletonProjects from "./components/skeleton-projects";
 import { useProjects } from "@/store";
 import { Sorts, TechnologiesList } from "../../page";
+import supabase from "@/supabase";
 
 interface ProjectsListProps {
     technologiesList: TechnologiesList;
@@ -15,8 +16,7 @@ interface ProjectsListProps {
 export default function ProjectsList({ technologiesList, searchInputValue, settechnologiesList, sorts }: ProjectsListProps) {
     const { projects, isLoading } = useProjects((store) => store);
     const checkedTechnologiesList = useMemo(() => technologiesList.filter((tech) => tech.checked), [technologiesList]);
-
-    console.log(projects);
+   
     const filteredProjects = projects
         ?.sort((a, b) => {
             if (sorts.sortBy === "newer") {

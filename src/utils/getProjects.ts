@@ -5,7 +5,7 @@ import { Project } from "./types"
 export default async function getProjects() {
     try {
         const { data } = await supabase.from('projects').select('*')
-
+        console.log(data)
         return data
     } catch (error) {
         throw error

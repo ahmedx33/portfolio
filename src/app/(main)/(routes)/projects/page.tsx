@@ -41,6 +41,8 @@ export default function Projects() {
             if (isProjectsLoading === false) return;
             (async () => {
                  getProjects().then(setProjects);
+
+                 console.log(getProjects())
             })();
         }
 
