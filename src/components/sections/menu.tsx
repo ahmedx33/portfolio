@@ -20,11 +20,6 @@ export default function Menu() {
                     </Button>
                 </li>
                 <li className="z-40">
-                    <Button className="z-40" size="icon" onClick={() => goRoute("about")}>
-                        <Sparkle />
-                    </Button>
-                </li>
-                <li className="z-40">
                     <Button className="z-40" size="icon" onClick={() => goRoute("projects")}>
                         <Luggage />
                     </Button>
