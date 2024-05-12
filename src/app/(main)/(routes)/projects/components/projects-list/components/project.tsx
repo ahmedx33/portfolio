@@ -62,17 +62,17 @@ export default function Project({
     );
     return (
         <Card className={`${isList ? "w-full flex pb-0" : "w-96 "} min-h-[400px] overflow-hidden shadow-xl relative`}>
-            <Image width={1920} height={1080} src={image} alt={name} draggable="false" className={isList ? "w-96 border-r" : "w-full h-44"} />
+            <Image width={1920} height={1080} src={image} alt={name} draggable="false" className={isList ? "w-96 border-r object-cover" : "w-full h-44"} />
             <div className={`pt-2 px-4 ${isList ? "flex flex-col justify-between" : ""}`}>
                 {isList ? <div>{heading}</div> : heading}
                 <div className="flex gap-1 mt-auto px-4 pb-3 absolute bottom-0 left-0 w-full ">
-                    <Button className="flex-1" asChild>
+                    <Button className={`flex-1 ${isList ? "border border-black" : ""}`} asChild>
                         <a href={url} target="_blank">
                             <Eye className="mr-1.5" />
                             Preview
                         </a>
                     </Button>
-                    <Button className="flex-1" asChild>
+                    <Button className={`flex-1 ${isList ? "border border-black" : ""}`} asChild>
                         <a href={code} target="_blank">
                             <Code className="mr-1.5" />
                             Code
