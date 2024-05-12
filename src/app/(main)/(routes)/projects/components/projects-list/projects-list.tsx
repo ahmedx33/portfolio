@@ -19,7 +19,7 @@ export default function ProjectsList({ technologiesList, searchInputValue, sette
    
     const filteredProjects = projects
         ?.sort((a, b) => {
-            if (sorts.sortBy === "newer") {
+            if (sorts.sortBy === "older") {
                 if (a.created_at < b.created_at) return -1;
                 if (a.created_at > b.created_at) return 1;
                 return 0;

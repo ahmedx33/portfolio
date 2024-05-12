@@ -10,4 +10,5 @@ export const technologies = [
     "React-router-dom",
     "Redux",
     "Zustand",
+    "Prisma"
 ] as const
