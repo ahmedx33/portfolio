@@ -47,7 +47,7 @@ function SearchFormComponent({ technologiesList, setTechnologiesList, searchInpu
                 <Button variant="outline" className="w-12 h-9 p-0 my-auto" onClick={() => setTechnologiesList(technologiesList.map(tech => { return { ...tech, checked: false } }))}><X className="h-full" /></Button>
                 {technologiesList?.map(technology => {
                     return <Button onClick={() => setTechnologiesList(technologiesList.map(tech => { return { ...tech, checked: tech.name === technology.name ? !tech.checked : tech.checked } }))} className={`h-9 w-fit border-2 dark:hover:bg-transparent   rounded-xl ${technology.checked ? "border-slate-950 dark:border-gray-400" : ""}`} variant="outline" key={technology.name} title={technology.name}>
-                        <Image width={40} height={40} alt={technology.name} className="h-full w-fit mr-2" draggable="false" src={`/logos/${technology.name.trim().toLowerCase()}.png`} />
+                        <Image width={40} height={40} alt={technology.name} className="h-full w-fit mr-2" draggable="false" src={`/logos/${technology.name.split(" ").join("-").toLowerCase()}.png`} />
                         {technology.name}
                     </Button>
                 })}
