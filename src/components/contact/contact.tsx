@@ -12,9 +12,9 @@ export default function Contact() {
                     <li>
                         email: <span className="select-text">ahmedx3.business@gmail.com</span>
                     </li>
-                    <li>
+{/*                     <li>
                         phone: <span className="select-text">01033579442</span>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </section>
